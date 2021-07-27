@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamos contar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>Vamos contar</h2>
+    </header>
+    <section>
+        <p>O objetivo desse exercicio é treinar o looping de repetição for.</p>
+        <h3>Insira o inicio</h3>
+        <input type="number" id="inicio" placeholder="Número inicial" onkeyup="check(inicio)" onchange="check(inicio)">
+        <h5 id="inicioembranco">campo em branco / valor incorreto!</h5>
+        <h3>Insira o fim</h3>
+        <input type="number" id="fim" placeholder="Número final" onclick="check(inicio)" onchange="check(fim)" onkeyup="check(fim)">
+        <h5 id="fimembranco">campo em branco / valor incorreto!</h5>
+        <h3>Insira o passo</h3>
+        <input type="number" id="passo" placeholder="De quanto em quanto?" onclick="check(fim)">
+        <h5 id="passoerrado">Você não informou o passo, ou informou um passo incorreto.<br> iremos considerar o passo sendo 1 (um)!</h5>
+        <button id="calc" onclick="calc()"><img src="calculator.png" alt="">contar</button>
+        <div id="res"></div>
+    </section>
+    <footer>
+        <h4>Curso em video</h4>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

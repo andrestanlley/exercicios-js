@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    background: linear-gradient(to bottom, rgb(0, 0, 0) 40%, rgb(110, 37, 153)) no-repeat;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.750);
+    border-radius: 1rem;
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 8px 10px 0 rgba(31, 38, 135, 0.123);
+    backdrop-filter: blur( 4px );
+    max-width: 25rem;
+    min-width: 25rem;
+}
+
+p{
+    display: inline-block;
+    font-size: .8rem;
+    color: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    margin: .5rem 0rem;
+}
+
+h2{
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+h4{
+    font-size: 1.2rem;
+    margin: 1rem;
+    font-style: italic;
+}
+
+h5{
+    visibility: hidden;
+    font-size: .7rem;
+    color: rgb(173, 7, 7);
+    
+}
+
+h5#passoerrado{
+    display: none;
+    visibility: visible;
+}
+
+
+input{
+    background: rgba(238, 238, 238, 0.671);
+    width: 100%;
+    height: 2rem;
+    border-radius: 6px;
+    text-align: center;
+}
+
+#calc{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: rgb(1, 109, 151);
+    height: 2.5rem;
+    border-radius: 0.375rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 0;
+    cursor: pointer;
+}
+
+#calc > img{
+    width: 1rem;
+    height: 1rem;
+    margin-right: .2rem;
+}
+
+@media (max-width: 460px) {
+    section{
+        padding: 1rem 1.5rem;
+        margin: 0rem .8rem;
+    }
+}
