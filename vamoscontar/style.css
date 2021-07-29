@@ -29,7 +29,6 @@ section{
     box-shadow: 0 8px 10px 0 rgba(31, 38, 135, 0.123);
     backdrop-filter: blur( 4px );
     max-width: 25rem;
-    min-width: 25rem;
 }
 
 p{
@@ -102,5 +101,6 @@ input{
     section{
         padding: 1rem 1.5rem;
         margin: 0rem .8rem;
+        width: 80vw;
     }
 }
